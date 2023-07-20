@@ -3,7 +3,7 @@
   import { setContext, onMount } from 'svelte';
   import { getMotion } from './utils.js';
   import { themes } from './config.js';
-  import UHCheader from './layout/UHCheader.svelte';
+  import UHCHeader from './layout/UHCHeader.svelte';
   import ONSFooter from './layout/ONSFooter.svelte';
   import Header from './layout/Header.svelte';
   import Section from './layout/Section.svelte';
@@ -259,7 +259,7 @@
   });
 </script>
 
-<UHCheader filled={true} center={false} />
+<UHCHeader filled={true} center={false} />
 
 <Header
   bgcolor="#206095"
