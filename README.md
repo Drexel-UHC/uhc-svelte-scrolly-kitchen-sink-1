@@ -48,7 +48,7 @@ If you need to add images or data files for charts, maps, etc, you can put these
 
 ## About the components
 
-#### &lt;ONSHeader/&gt; & &lt;ONSFooter/&gt;
+#### &lt;UHCheader/&gt; & &lt;ONSFooter/&gt;
 Minimal ONS-branded page headers and footers based on existing ONS templates.
 
 #### &lt;Header/&gt;
