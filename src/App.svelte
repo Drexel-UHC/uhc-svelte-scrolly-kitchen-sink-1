@@ -43,6 +43,10 @@
   // Constants
   const datasets = ['region', 'district'];
   const topojson = './data/geo_lad2021.json';
+  const topojson_uhc = './data/geo_lad2021_uhc.json';
+  const topojson_copy = './data/geo_lad2021 copy.json';
+  const topojson_uhc_copy = './data/geo_lad2021_uhc copy.json';
+
   const mapstyle =
     'https://bothness.github.io/ons-basemaps/data/style-omt.json';
   const mapbounds = {
@@ -251,12 +255,21 @@
     });
   });
 
-  getTopo(topojson, 'geog').then((geo) => {
+  console.log('*************BEFORE getTopo()');
+  getTopo(topojson_uhc, 'geog').then((geo) => {
+    console.log(`** THEN`);
+    console.log(geo);
+
     geo.features.sort((a, b) =>
       a.properties.AREANM.localeCompare(b.properties.AREANM)
     );
     geojson = geo;
   });
+
+  // getTopo(topojson_uhc, 'geog').then((geo) => {
+  //   console.log(`** THEN UHC`);
+  //   console.log(geo);
+  // });
 </script>
 
 <UHCHeader filled={true} center={false} />
