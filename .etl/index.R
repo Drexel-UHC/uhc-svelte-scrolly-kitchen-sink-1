@@ -63,6 +63,8 @@
 
 { # Outputs --------------------------------------------
   
+  vec__state_abbr = c("PA","MD","DE")
+ 
   { ##  county_topo.json ----------------------------------------------------------------
     
     
@@ -72,7 +74,7 @@
     
     sf_init = sf_county_seed %>% 
       left_join(xwalk_state) %>% 
-      filter(state_abbr%in%c("PA","MD","DE"))
+      filter(state_abbr%in%vec__state_abbr)
     
     sf_uhc = sf_init %>%  
       mutate(id = geoid) %>% 
@@ -116,6 +118,7 @@
     ## Final
     df_data_state = df_pop_wide %>% 
       left_join(xwalk_state) %>% 
+      filter(region_name == 'Northeast'|state_abbr%in%vec__state_abbr) %>% 
       select(code = state_fip,
              name = state_name, 
              # area = aland_mile2,
@@ -142,7 +145,7 @@
       filter(geo == 'county') %>% 
       left_join(xwalk_county_state) %>% 
       left_join(xwalk_state) %>%
-      filter(state_abbr%in%c("PA","MD","DE")) %>% 
+      filter(state_abbr%in%vec__state_abbr) %>% 
       glimpse()
     
     df_pop_wide = df_demographics_tmp %>% 
