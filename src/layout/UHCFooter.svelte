@@ -1,7 +1,7 @@
 <script>
   import { themes } from '../config.js';
   import { getContext } from 'svelte';
-
+  import Icon from '@iconify/svelte';
   export let theme = getContext('theme');
 </script>
 
@@ -11,33 +11,59 @@
   ]};"
 >
   <div class="col-wide" data-analytics="footer">
-    <a href="https://drexel.edu/uhc/">
-      <div id="svg-container">
-        <img
-          id="my-svg"
-          src="./img/uhc-primary-blue_black.svg"
-          alt="Drexel Urban Health Collaborative"
-        />
-      </div>
-    </a>
-    <div class="link-tree">
-      <ul>
-        <li>
-          <a
-            href="https://drexel.edu/uhc/about/contact/"
-            class="link"
-            style="color: {themes[theme]['text']}">Contact us</a
-          >
-        </li>
+    <div class="container">
+      <div class="item">
+        <a href="https://drexel.edu/uhc/">
+          <div id="svg-container">
+            <img
+              id="my-svg"
+              src="./img/uhc-primary-blue_black.svg"
+              alt="Drexel Urban Health Collaborative"
+            />
+          </div>
+        </a>
+        <div class="link-tree">
+          <ul>
+            <li>
+              <a
+                href="https://drexel.edu/uhc/about/contact/"
+                class="link"
+                style="color: {themes[theme]['text']}">Contact us</a
+              >
+            </li>
 
-        <li>
+            <li>
+              <a
+                href="https://drexel.edu/privacy"
+                class="link"
+                style="color: {themes[theme]['text']}">Privacy and legal</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="item" id="follow-uhc">
+        Follow UHC:
+        <div class="container">
+          <a href="https://www.facebook.com/DrexelUHC/">
+            <div class="social-icon"><Icon icon="il:facebook" /></div>
+          </a>
+          <a href="https://twitter.com/drexeluhc">
+            <div class="social-icon"><Icon icon="mdi:twitter" /></div>
+          </a>
+          <a href="https://www.instagram.com/drexeluhc">
+            <div class="social-icon"><Icon icon="mdi:instagram" /></div>
+          </a>
+          <a href="https://www.youtube.com/@urbanhealthcollaborative8928">
+            <div class="social-icon"><Icon icon="mdi:youtube" /></div>
+          </a>
           <a
-            href="https://drexel.edu/privacy"
-            class="link"
-            style="color: {themes[theme]['text']}">Privacy and legal</a
+            href="https://www.linkedin.com/company/drexel-urban-health-collaborative/"
           >
-        </li>
-      </ul>
+            <div class="social-icon"><Icon icon="mdi:linkedin" /></div>
+          </a>
+        </div>
+      </div>
     </div>
     <hr style="border-top-color: {themes[theme]['muted']}" />
     <div class="license">
@@ -61,6 +87,19 @@
 </footer>
 
 <style>
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #follow-uhc {
+    min-width: 175px;
+  }
+  .item {
+  }
+  .social-icon {
+    font-size: 1.5rem;
+  }
   footer {
     padding-bottom: 72px;
     padding-top: 36px;
