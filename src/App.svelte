@@ -343,7 +343,7 @@
 </Section>
 
 {#if data.region.indicators}
-  <Media col="medium" caption="Source: ONS mid-year population estimates.">
+  <Media col="medium" caption="Source: Census Bureau -  ACS 5 year estimates">
     <div class="chart-sml">
       <BarChart
         data={[...data.region.indicators].sort((a, b) => a.pop - b.pop)}
@@ -355,7 +355,7 @@
         height={350}
         padding={{ top: 0, bottom: 15, left: 140, right: 0 }}
         area={false}
-        title="Population by region/nation, 2020"
+        title="Population by state, 2020 - North East Region"
       />
     </div>
   </Media>
