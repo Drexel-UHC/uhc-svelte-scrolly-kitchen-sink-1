@@ -1105,13 +1105,13 @@ var app = (function () {
     			attr_dev(img, "id", "my-svg");
     			if (!src_url_equal(img.src, img_src_value = "./img/uhc-primary-blue_black.svg")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Drexel Urban Health Collaborative");
-    			attr_dev(img, "class", "svelte-1uzhcwk");
+    			attr_dev(img, "class", "svelte-dmeou9");
     			add_location(img, file, 17, 8, 485);
     			attr_dev(div0, "id", "svg-container");
-    			attr_dev(div0, "class", "svelte-1uzhcwk");
+    			attr_dev(div0, "class", "svelte-dmeou9");
     			add_location(div0, file, 16, 6, 451);
     			attr_dev(a, "href", "https://drexel.edu/uhc/");
-    			attr_dev(a, "class", "svelte-1uzhcwk");
+    			attr_dev(a, "class", "svelte-dmeou9");
     			add_location(a, file, 15, 4, 409);
     			attr_dev(div1, "class", "col-wide middle");
     			toggle_class(div1, "center", /*center*/ ctx[2]);
@@ -1121,7 +1121,7 @@ var app = (function () {
     			? 'background-color: ' + themes[/*theme*/ ctx[0]]['background'] + ';'
     			: ''));
 
-    			attr_dev(nav, "class", "svelte-1uzhcwk");
+    			attr_dev(nav, "class", "svelte-dmeou9");
     			add_location(nav, file, 9, 0, 209);
     		},
     		l: function claim(nodes) {
