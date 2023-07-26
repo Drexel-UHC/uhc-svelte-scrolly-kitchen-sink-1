@@ -45,6 +45,9 @@
       <div class="item" id="follow-uhc">
         Follow UHC:
         <div class="container">
+          <a href="https://github.com/Drexel-UHC">
+            <div class="social-icon"><Icon icon="mdi:github" /></div>
+          </a>
           <a href="https://www.facebook.com/DrexelUHC/">
             <div class="social-icon"><Icon icon="il:facebook" /></div>
           </a>
