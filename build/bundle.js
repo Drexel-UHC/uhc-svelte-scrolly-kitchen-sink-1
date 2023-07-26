@@ -3462,8 +3462,8 @@ var app = (function () {
 
     function create_fragment$2(ctx) {
     	let footer;
-    	let div12;
-    	let div10;
+    	let div13;
+    	let div11;
     	let div2;
     	let a0;
     	let div0;
@@ -3480,9 +3480,9 @@ var app = (function () {
     	let a2;
     	let t3;
     	let t4;
-    	let div9;
+    	let div10;
     	let t5;
-    	let div8;
+    	let div9;
     	let a3;
     	let div3;
     	let icon0;
@@ -3503,39 +3503,48 @@ var app = (function () {
     	let div7;
     	let icon4;
     	let t10;
-    	let hr;
-    	let t11;
-    	let div11;
-    	let t12;
     	let a8;
+    	let div8;
+    	let icon5;
+    	let t11;
+    	let hr;
+    	let t12;
+    	let div12;
     	let t13;
-    	let t14;
     	let a9;
+    	let t14;
     	let t15;
+    	let a10;
     	let t16;
+    	let t17;
     	let current;
 
     	icon0 = new Icon({
-    			props: { icon: "il:facebook" },
+    			props: { icon: "mdi:github" },
     			$$inline: true
     		});
 
     	icon1 = new Icon({
-    			props: { icon: "mdi:twitter" },
+    			props: { icon: "il:facebook" },
     			$$inline: true
     		});
 
     	icon2 = new Icon({
-    			props: { icon: "mdi:instagram" },
+    			props: { icon: "mdi:twitter" },
     			$$inline: true
     		});
 
     	icon3 = new Icon({
-    			props: { icon: "mdi:youtube" },
+    			props: { icon: "mdi:instagram" },
     			$$inline: true
     		});
 
     	icon4 = new Icon({
+    			props: { icon: "mdi:youtube" },
+    			$$inline: true
+    		});
+
+    	icon5 = new Icon({
     			props: { icon: "mdi:linkedin" },
     			$$inline: true
     		});
@@ -3543,8 +3552,8 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			footer = element("footer");
-    			div12 = element("div");
-    			div10 = element("div");
+    			div13 = element("div");
+    			div11 = element("div");
     			div2 = element("div");
     			a0 = element("a");
     			div0 = element("div");
@@ -3560,9 +3569,9 @@ var app = (function () {
     			a2 = element("a");
     			t3 = text("Privacy and legal");
     			t4 = space();
-    			div9 = element("div");
+    			div10 = element("div");
     			t5 = text("Follow UHC:\r\n        ");
-    			div8 = element("div");
+    			div9 = element("div");
     			a3 = element("a");
     			div3 = element("div");
     			create_component(icon0.$$.fragment);
@@ -3583,95 +3592,103 @@ var app = (function () {
     			div7 = element("div");
     			create_component(icon4.$$.fragment);
     			t10 = space();
-    			hr = element("hr");
-    			t11 = space();
-    			div11 = element("div");
-    			t12 = text("This template was forked and modified from the ");
     			a8 = element("a");
-    			t13 = text("UK Office of National Statistics");
-    			t14 = text(". All content is available under the\r\n      ");
+    			div8 = element("div");
+    			create_component(icon5.$$.fragment);
+    			t11 = space();
+    			hr = element("hr");
+    			t12 = space();
+    			div12 = element("div");
+    			t13 = text("This template was forked and modified from the ");
     			a9 = element("a");
-    			t15 = text("MIT License");
-    			t16 = text(", except where otherwise stated");
+    			t14 = text("UK Office of National Statistics");
+    			t15 = text(". All content is available under the\r\n      ");
+    			a10 = element("a");
+    			t16 = text("MIT License");
+    			t17 = text(", except where otherwise stated");
     			attr_dev(img, "id", "my-svg");
     			if (!src_url_equal(img.src, img_src_value = "./img/uhc-primary-blue_black.svg")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Drexel Urban Health Collaborative");
-    			attr_dev(img, "class", "svelte-1i1t0jd");
+    			attr_dev(img, "class", "svelte-jjyrck");
     			add_location(img, file$2, 17, 12, 492);
     			attr_dev(div0, "id", "svg-container");
-    			attr_dev(div0, "class", "svelte-1i1t0jd");
+    			attr_dev(div0, "class", "svelte-jjyrck");
     			add_location(div0, file$2, 16, 10, 454);
     			attr_dev(a0, "href", "https://drexel.edu/uhc/");
-    			attr_dev(a0, "class", "svelte-1i1t0jd");
+    			attr_dev(a0, "class", "svelte-jjyrck");
     			add_location(a0, file$2, 15, 8, 408);
     			attr_dev(a1, "href", "https://drexel.edu/uhc/about/contact/");
-    			attr_dev(a1, "class", "link svelte-1i1t0jd");
+    			attr_dev(a1, "class", "link svelte-jjyrck");
     			set_style(a1, "color", themes[/*theme*/ ctx[0]]['text']);
     			add_location(a1, file$2, 27, 14, 763);
-    			attr_dev(li0, "class", "svelte-1i1t0jd");
+    			attr_dev(li0, "class", "svelte-jjyrck");
     			add_location(li0, file$2, 26, 12, 743);
     			attr_dev(a2, "href", "https://drexel.edu/privacy");
-    			attr_dev(a2, "class", "link svelte-1i1t0jd");
+    			attr_dev(a2, "class", "link svelte-jjyrck");
     			set_style(a2, "color", themes[/*theme*/ ctx[0]]['text']);
     			add_location(a2, file$2, 35, 14, 999);
-    			attr_dev(li1, "class", "svelte-1i1t0jd");
+    			attr_dev(li1, "class", "svelte-jjyrck");
     			add_location(li1, file$2, 34, 12, 979);
-    			attr_dev(ul, "class", "svelte-1i1t0jd");
+    			attr_dev(ul, "class", "svelte-jjyrck");
     			add_location(ul, file$2, 25, 10, 725);
-    			attr_dev(div1, "class", "link-tree svelte-1i1t0jd");
+    			attr_dev(div1, "class", "link-tree svelte-jjyrck");
     			add_location(div1, file$2, 24, 8, 690);
-    			attr_dev(div2, "class", "item svelte-1i1t0jd");
+    			attr_dev(div2, "class", "item svelte-jjyrck");
     			add_location(div2, file$2, 14, 6, 380);
-    			attr_dev(div3, "class", "social-icon svelte-1i1t0jd");
-    			add_location(div3, file$2, 48, 12, 1410);
-    			attr_dev(a3, "href", "https://www.facebook.com/DrexelUHC/");
+    			attr_dev(div3, "class", "social-icon svelte-jjyrck");
+    			add_location(div3, file$2, 48, 12, 1404);
+    			attr_dev(a3, "href", "https://github.com/Drexel-UHC");
     			add_location(a3, file$2, 47, 10, 1350);
-    			attr_dev(div4, "class", "social-icon svelte-1i1t0jd");
-    			add_location(div4, file$2, 51, 12, 1550);
-    			attr_dev(a4, "href", "https://twitter.com/drexeluhc");
-    			add_location(a4, file$2, 50, 10, 1496);
-    			attr_dev(div5, "class", "social-icon svelte-1i1t0jd");
-    			add_location(div5, file$2, 54, 12, 1696);
-    			attr_dev(a5, "href", "https://www.instagram.com/drexeluhc");
-    			add_location(a5, file$2, 53, 10, 1636);
-    			attr_dev(div6, "class", "social-icon svelte-1i1t0jd");
-    			add_location(div6, file$2, 57, 12, 1862);
-    			attr_dev(a6, "href", "https://www.youtube.com/@urbanhealthcollaborative8928");
-    			add_location(a6, file$2, 56, 10, 1784);
-    			attr_dev(div7, "class", "social-icon svelte-1i1t0jd");
-    			add_location(div7, file$2, 62, 12, 2065);
-    			attr_dev(a7, "href", "https://www.linkedin.com/company/drexel-urban-health-collaborative/");
-    			add_location(a7, file$2, 59, 10, 1948);
-    			attr_dev(div8, "class", "container svelte-1i1t0jd");
-    			add_location(div8, file$2, 46, 8, 1315);
-    			attr_dev(div9, "class", "item svelte-1i1t0jd");
-    			attr_dev(div9, "id", "follow-uhc");
-    			add_location(div9, file$2, 44, 6, 1250);
-    			attr_dev(div10, "class", "container svelte-1i1t0jd");
-    			add_location(div10, file$2, 13, 4, 349);
+    			attr_dev(div4, "class", "social-icon svelte-jjyrck");
+    			add_location(div4, file$2, 51, 12, 1549);
+    			attr_dev(a4, "href", "https://www.facebook.com/DrexelUHC/");
+    			add_location(a4, file$2, 50, 10, 1489);
+    			attr_dev(div5, "class", "social-icon svelte-jjyrck");
+    			add_location(div5, file$2, 54, 12, 1689);
+    			attr_dev(a5, "href", "https://twitter.com/drexeluhc");
+    			add_location(a5, file$2, 53, 10, 1635);
+    			attr_dev(div6, "class", "social-icon svelte-jjyrck");
+    			add_location(div6, file$2, 57, 12, 1835);
+    			attr_dev(a6, "href", "https://www.instagram.com/drexeluhc");
+    			add_location(a6, file$2, 56, 10, 1775);
+    			attr_dev(div7, "class", "social-icon svelte-jjyrck");
+    			add_location(div7, file$2, 60, 12, 2001);
+    			attr_dev(a7, "href", "https://www.youtube.com/@urbanhealthcollaborative8928");
+    			add_location(a7, file$2, 59, 10, 1923);
+    			attr_dev(div8, "class", "social-icon svelte-jjyrck");
+    			add_location(div8, file$2, 65, 12, 2204);
+    			attr_dev(a8, "href", "https://www.linkedin.com/company/drexel-urban-health-collaborative/");
+    			add_location(a8, file$2, 62, 10, 2087);
+    			attr_dev(div9, "class", "container svelte-jjyrck");
+    			add_location(div9, file$2, 46, 8, 1315);
+    			attr_dev(div10, "class", "item svelte-jjyrck");
+    			attr_dev(div10, "id", "follow-uhc");
+    			add_location(div10, file$2, 44, 6, 1250);
+    			attr_dev(div11, "class", "container svelte-jjyrck");
+    			add_location(div11, file$2, 13, 4, 349);
     			set_style(hr, "border-top-color", themes[/*theme*/ ctx[0]]['muted']);
-    			attr_dev(hr, "class", "svelte-1i1t0jd");
-    			add_location(hr, file$2, 67, 4, 2188);
-    			attr_dev(a8, "href", "https://github.com/ONSvisual/svelte-scrolly");
-    			attr_dev(a8, "class", "link svelte-1i1t0jd");
-    			attr_dev(a8, "target", "_blank");
-    			attr_dev(a8, "rel", "noopener");
-    			set_style(a8, "color", themes[/*theme*/ ctx[0]]['text']);
-    			add_location(a8, file$2, 69, 53, 2327);
-    			attr_dev(a9, "href", "https://opensource.org/licenses/MIT");
-    			attr_dev(a9, "class", "link svelte-1i1t0jd");
+    			attr_dev(hr, "class", "svelte-jjyrck");
+    			add_location(hr, file$2, 70, 4, 2327);
+    			attr_dev(a9, "href", "https://github.com/ONSvisual/svelte-scrolly");
+    			attr_dev(a9, "class", "link svelte-jjyrck");
     			attr_dev(a9, "target", "_blank");
     			attr_dev(a9, "rel", "noopener");
     			set_style(a9, "color", themes[/*theme*/ ctx[0]]['text']);
-    			add_location(a9, file$2, 77, 6, 2607);
-    			attr_dev(div11, "class", "license svelte-1i1t0jd");
-    			add_location(div11, file$2, 68, 4, 2251);
-    			attr_dev(div12, "class", "col-wide");
-    			attr_dev(div12, "data-analytics", "footer");
-    			add_location(div12, file$2, 12, 2, 297);
+    			add_location(a9, file$2, 72, 53, 2466);
+    			attr_dev(a10, "href", "https://opensource.org/licenses/MIT");
+    			attr_dev(a10, "class", "link svelte-jjyrck");
+    			attr_dev(a10, "target", "_blank");
+    			attr_dev(a10, "rel", "noopener");
+    			set_style(a10, "color", themes[/*theme*/ ctx[0]]['text']);
+    			add_location(a10, file$2, 80, 6, 2746);
+    			attr_dev(div12, "class", "license svelte-jjyrck");
+    			add_location(div12, file$2, 71, 4, 2390);
+    			attr_dev(div13, "class", "col-wide");
+    			attr_dev(div13, "data-analytics", "footer");
+    			add_location(div13, file$2, 12, 2, 297);
     			set_style(footer, "color", themes[/*theme*/ ctx[0]]['text']);
     			set_style(footer, "background-color", themes[/*theme*/ ctx[0]]['pale']);
-    			attr_dev(footer, "class", "svelte-1i1t0jd");
+    			attr_dev(footer, "class", "svelte-jjyrck");
     			add_location(footer, file$2, 7, 0, 187);
     		},
     		l: function claim(nodes) {
@@ -3679,9 +3696,9 @@ var app = (function () {
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, footer, anchor);
-    			append_dev(footer, div12);
-    			append_dev(div12, div10);
-    			append_dev(div10, div2);
+    			append_dev(footer, div13);
+    			append_dev(div13, div11);
+    			append_dev(div11, div2);
     			append_dev(div2, a0);
     			append_dev(a0, div0);
     			append_dev(div0, img);
@@ -3695,40 +3712,44 @@ var app = (function () {
     			append_dev(ul, li1);
     			append_dev(li1, a2);
     			append_dev(a2, t3);
-    			append_dev(div10, t4);
+    			append_dev(div11, t4);
+    			append_dev(div11, div10);
+    			append_dev(div10, t5);
     			append_dev(div10, div9);
-    			append_dev(div9, t5);
-    			append_dev(div9, div8);
-    			append_dev(div8, a3);
+    			append_dev(div9, a3);
     			append_dev(a3, div3);
     			mount_component(icon0, div3, null);
-    			append_dev(div8, t6);
-    			append_dev(div8, a4);
+    			append_dev(div9, t6);
+    			append_dev(div9, a4);
     			append_dev(a4, div4);
     			mount_component(icon1, div4, null);
-    			append_dev(div8, t7);
-    			append_dev(div8, a5);
+    			append_dev(div9, t7);
+    			append_dev(div9, a5);
     			append_dev(a5, div5);
     			mount_component(icon2, div5, null);
-    			append_dev(div8, t8);
-    			append_dev(div8, a6);
+    			append_dev(div9, t8);
+    			append_dev(div9, a6);
     			append_dev(a6, div6);
     			mount_component(icon3, div6, null);
-    			append_dev(div8, t9);
-    			append_dev(div8, a7);
+    			append_dev(div9, t9);
+    			append_dev(div9, a7);
     			append_dev(a7, div7);
     			mount_component(icon4, div7, null);
-    			append_dev(div12, t10);
-    			append_dev(div12, hr);
-    			append_dev(div12, t11);
-    			append_dev(div12, div11);
-    			append_dev(div11, t12);
-    			append_dev(div11, a8);
-    			append_dev(a8, t13);
-    			append_dev(div11, t14);
-    			append_dev(div11, a9);
-    			append_dev(a9, t15);
-    			append_dev(div11, t16);
+    			append_dev(div9, t10);
+    			append_dev(div9, a8);
+    			append_dev(a8, div8);
+    			mount_component(icon5, div8, null);
+    			append_dev(div13, t11);
+    			append_dev(div13, hr);
+    			append_dev(div13, t12);
+    			append_dev(div13, div12);
+    			append_dev(div12, t13);
+    			append_dev(div12, a9);
+    			append_dev(a9, t14);
+    			append_dev(div12, t15);
+    			append_dev(div12, a10);
+    			append_dev(a10, t16);
+    			append_dev(div12, t17);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
@@ -3745,11 +3766,11 @@ var app = (function () {
     			}
 
     			if (!current || dirty & /*theme*/ 1) {
-    				set_style(a8, "color", themes[/*theme*/ ctx[0]]['text']);
+    				set_style(a9, "color", themes[/*theme*/ ctx[0]]['text']);
     			}
 
     			if (!current || dirty & /*theme*/ 1) {
-    				set_style(a9, "color", themes[/*theme*/ ctx[0]]['text']);
+    				set_style(a10, "color", themes[/*theme*/ ctx[0]]['text']);
     			}
 
     			if (!current || dirty & /*theme*/ 1) {
@@ -3767,6 +3788,7 @@ var app = (function () {
     			transition_in(icon2.$$.fragment, local);
     			transition_in(icon3.$$.fragment, local);
     			transition_in(icon4.$$.fragment, local);
+    			transition_in(icon5.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
@@ -3775,6 +3797,7 @@ var app = (function () {
     			transition_out(icon2.$$.fragment, local);
     			transition_out(icon3.$$.fragment, local);
     			transition_out(icon4.$$.fragment, local);
+    			transition_out(icon5.$$.fragment, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
@@ -3784,6 +3807,7 @@ var app = (function () {
     			destroy_component(icon2);
     			destroy_component(icon3);
     			destroy_component(icon4);
+    			destroy_component(icon5);
     		}
     	};
 
@@ -29489,7 +29513,7 @@ uniform `+P+" "+z+" u_"+k+`;
     			a.textContent = "this Github repo";
     			t4 = text(".");
     			add_location(h2, file$t, 720, 2, 21775);
-    			attr_dev(a, "href", "https://github.com/ONSvisual/svelte-scrolly/");
+    			attr_dev(a, "href", "https://github.com/Drexel-UHC/uhc-svelte-scrolly-template/");
     			attr_dev(a, "target", "_blank");
     			add_location(a, file$t, 723, 7, 21904);
     			add_location(p, file$t, 721, 2, 21812);
