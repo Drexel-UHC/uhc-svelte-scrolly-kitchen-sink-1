@@ -661,11 +661,10 @@
       <section data-id="map01">
         <div class="col-medium">
           <p>
-            This map shows <strong>population density</strong> by district.
-            Districts are coloured from <Em color={colors.seq[0]}
-              >least dense</Em
+            This map shows <strong>population density</strong> by county.
+            Counties are coloured from <Em color={colors.seq[0]}>least dense</Em
             > to <Em color={colors.seq[4]}>most dense</Em>. You can hover to see
-            the district name and density.
+            the county name and density.
           </p>
         </div>
       </section>
@@ -685,17 +684,17 @@
             <p>
               The map is now zoomed on <Em color={district.age_med_color}
                 >{district.name}</Em
-              >, the district with the oldest median age, {district.age_med} years.
+              >, the county with the oldest median age, {district.age_med} years.
             </p>
           {/each}
         </div>
       </section>
       <section data-id="map04">
         <div class="col-medium">
-          <h3>Select a district</h3>
+          <h3>Select a county</h3>
           <p>
             Use the selection box below or click on the map to select and zoom
-            to a district.
+            to a county.
           </p>
           {#if geojson}
             <p>
