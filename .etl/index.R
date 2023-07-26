@@ -63,8 +63,15 @@
 
 { # Outputs --------------------------------------------
   
-  vec__state_abbr = c("PA","MD","DE")
- 
+  
+  region_tmp = 'Northeast'
+  division_tmp =  "Middle Atlantic"
+  
+  vec__state_abbr = xwalk_state %>% 
+    # filter(division_name == division_tmp) %>% 
+    filter(region_name == region_tmp) %>% 
+    pull(state_abbr)
+  
   { ##  county_topo.json ----------------------------------------------------------------
     
     
@@ -118,7 +125,7 @@
     ## Final
     df_data_state = df_pop_wide %>% 
       left_join(xwalk_state) %>% 
-      filter(region_name == 'Northeast'|state_abbr%in%vec__state_abbr) %>% 
+      filter(state_abbr%in%vec__state_abbr) %>% 
       select(code = state_fip,
              name = state_name, 
              # area = aland_mile2,
@@ -145,7 +152,7 @@
       filter(geo == 'county') %>% 
       left_join(xwalk_county_state) %>% 
       left_join(xwalk_state) %>%
-      filter(state_abbr%in%vec__state_abbr) %>% 
+      filter(state_abbr%in%vec__state_abbr) %>%
       glimpse()
     
     df_pop_wide = df_demographics_tmp %>% 
@@ -190,3 +197,4 @@
   }
   
 }
+
