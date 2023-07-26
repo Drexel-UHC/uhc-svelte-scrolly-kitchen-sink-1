@@ -197,19 +197,39 @@
   $: id && runActions(Object.keys(actions)); // Run above code when 'id' object changes
 
   // INITIALISATION CODE
-  datasets.forEach((geo) => {
-    getData(`./data/data_${geo}.csv`).then((arr) => {
+
+  const dataset_named = [
+    { original: 'region', file: 'state' },
+    { original: 'district', file: 'county' },
+  ];
+  dataset_named.forEach((dataset) => {
+    const geo = dataset.original;
+    const uhc_geo = dataset.file;
+
+    getData(`./data/data_${uhc_geo}.csv`).then((arr) => {
+      console.log(`RECIEVED  DATA FOR ${uhc_geo} (aka ${geo}) `);
+      console.log(arr);
       let meta = arr.map((d) => ({
         code: d.code,
         name: d.name,
         parent: d.parent ? d.parent : null,
       }));
       let lookup = {};
+
+      console.log(meta);
+
       meta.forEach((d) => {
         lookup[d.code] = d;
       });
+
+      console.log(`marker 1   FOR ${uhc_geo} (aka ${geo})`);
+      console.log(metadata);
+
+      // bug here
       metadata[geo].array = meta;
       metadata[geo].lookup = lookup;
+
+      console.log(`marker 2   FOR ${uhc_geo} (aka ${geo})`);
 
       let indicators = arr.map((d, i) => ({
         ...meta[i],
