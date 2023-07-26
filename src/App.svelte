@@ -468,9 +468,9 @@
     <section data-id="chart01">
       <div class="col-medium">
         <p>
-          This chart shows the <strong>area in square kilometres</strong> of each
-          local authority district in the UK. Each circle represents one district.
-          The scale is logarithmic.
+          This chart shows the <strong>area in square miles</strong> of each county
+          in the North East census region. Each circle represents one county. The
+          scale is logarithmic.
         </p>
       </div>
     </section>
@@ -478,34 +478,32 @@
       <div class="col-medium">
         <p>
           The radius of each circle shows the <strong>total population</strong> of
-          the district.
+          the county.
         </p>
       </div>
     </section>
     <section data-id="chart03">
       <div class="col-medium">
         <p>
-          The vertical axis shows the <strong>density</strong> of the district in
-          people per hectare.
+          The vertical axis shows the <strong>density</strong> of the county in people
+          per square miles.
         </p>
       </div>
     </section>
     <section data-id="chart04">
       <div class="col-medium">
         <p>
-          The colour of each circle shows the <strong
-            >part of the country</strong
-          > that the district is within.
+          The colour of each circle shows the <strong>state</strong> that the county
+          is within.
         </p>
       </div>
     </section>
     <section data-id="chart05">
       <div class="col-medium">
-        <h3>Select a district</h3>
+        <h3>Select a county</h3>
         <p>
-          Use the selection box below or click on the chart to select a
-          district. The chart will also highlight the other districts in the
-          same part of the country.
+          Use the selection box below or click on the chart to select a county.
+          The chart will also highlight the other counties in the same state.
         </p>
         {#if geojson}
           <p>
