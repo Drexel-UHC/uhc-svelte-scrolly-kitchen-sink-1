@@ -16,6 +16,7 @@
     "@babel/plugin-transform-runtime": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
     "@babel/runtime": "^7.12.1",
+    "@iconify/svelte": "^3.1.4",
     "@onsvisual/svelte-charts": "latest",
     "@onsvisual/svelte-maps": "latest",
     "@rollup/plugin-commonjs": "^14.0.0",
@@ -36,6 +37,7 @@
     "topojson-client": "^3.1.0"
   },
   "dependencies": {
+    "iconify-icon": "^1.0.8",
     "sirv-cli": "^1.0.0"
   }
 }
