@@ -1,10 +1,7 @@
-#' This script will generate the following:
+#' This script will generate the following outputs:
 #'   1. county_topo.json (legacy: geo_lad2021.json)
 #'   2. data_place.csv (legacy: data_region.csv)
 #'   2. data_county.csv (legacy: data_district.csv)
-
-
-
 
 { # Setup -------------------------------------------------------------------
   
@@ -64,7 +61,7 @@
   
 }
 
-{ # UHC items --------------------------------------------
+{ # Outputs --------------------------------------------
   
   { ##  county_topo.json ----------------------------------------------------------------
     
@@ -165,8 +162,8 @@
     
     df_spatial_metadata = sf_county_seed %>% 
       as.data.frame() %>% 
-      select(geoid, county_name,  aland_mile2,pop_dens) %>% 
-      as_tibble()
+      as_tibble() %>% 
+      select(geoid, county_name,  aland_mile2,pop_dens) 
     
     df_age = df_demographics_tmp %>% 
       filter(year == 2020) %>% 
@@ -177,7 +174,8 @@
       left_join(df_spatial_metadata) %>% 
       left_join(df_age) %>% 
       select(code = geoid,
-             name = county_name, 
+             name = county_name,
+             parent = state_fip,
              area = aland_mile2,
              density = pop_dens,
              age_med = median_age,
