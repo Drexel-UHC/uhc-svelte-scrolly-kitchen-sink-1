@@ -4,7 +4,7 @@
   import { getMotion } from './utils.js';
   import { themes } from './config.js';
   import UHCHeader from './layout/UHCHeader.svelte';
-  import ONSFooter from './layout/ONSFooter.svelte';
+  import UHCFooter from './layout/UHCFooter.svelte';
   import Header from './layout/Header.svelte';
   import Section from './layout/Section.svelte';
   import Media from './layout/Media.svelte';
@@ -727,7 +727,7 @@
   </p>
 </Section>
 
-<ONSFooter />
+<UHCFooter />
 
 <style>
   /* Styles specific to elements within the demo */
