@@ -41,7 +41,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     position: relative;
-    height: 80px;
+    height: 100px;
     margin-bottom: -80px;
     border-bottom: 1px solid #777;
     z-index: 1;
