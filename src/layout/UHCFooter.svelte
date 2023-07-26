@@ -96,7 +96,7 @@
     justify-content: space-between;
   }
   #follow-uhc {
-    min-width: 175px;
+    min-width: 200px;
   }
   .item {
   }
