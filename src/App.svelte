@@ -57,6 +57,10 @@
       [-9, 49],
       [2, 61],
     ],
+    uhc: [
+      [-80.519851, 37.886605], // Southwest corner (latitude, longitude)
+      [-74.689754, 42.516072], // Northeast corner (latitude, longitude)
+    ],
   };
 
   // Data
@@ -120,13 +124,13 @@
       // Actions for <Scroller/> with id="map"
       map01: () => {
         // Action for <section/> with data-id="map01"
-        fitBounds(mapbounds.uk);
+        fitBounds(mapbounds.uhc);
         mapKey = 'density';
         mapHighlighted = [];
         explore = false;
       },
       map02: () => {
-        fitBounds(mapbounds.uk);
+        fitBounds(mapbounds.uhc);
         mapKey = 'age_med';
         mapHighlighted = [];
         explore = false;
@@ -141,7 +145,7 @@
         explore = false;
       },
       map04: () => {
-        fitBounds(mapbounds.uk);
+        fitBounds(mapbounds.uhc);
         mapKey = 'age_med';
         mapHighlighted = [];
         explore = true;
@@ -265,8 +269,6 @@
 
   console.log('*************BEFORE getTopo()');
 
-  // topojson_county_uhc
-  // topojson_copy
   getTopo(topojson_county_uhc, 'geog').then((geo) => {
     console.log(`** THEN`);
     console.log(geo);
@@ -590,7 +592,7 @@
             style={mapstyle}
             bind:map
             interactive={false}
-            location={{ bounds: mapbounds.uk }}
+            location={{ bounds: mapbounds.uhc }}
           >
             <MapSource
               id="lad"

@@ -85,7 +85,7 @@
     ### Export
     sf_uhc %>% 
       geojsonio::topojson_write(
-        file = "../public/data/geo_lad2021_uhc.json",
+        file = "../public/data/geo_counties.json",
         object_name  = 'geog')
     
   }
