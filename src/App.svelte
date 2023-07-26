@@ -537,7 +537,7 @@
 <Media
   col="full"
   height={600}
-  caption="This is an optional caption for the above chart or media. It can contain HTML code and ."
+  caption="This is an optional caption for the above chart or media. It can contain HTML code and <a href='#'>hyperlinks</a>, and wrap onto multiple lines."
 >
   <div class="chart-full">
     {#if data.district.timeseries}
@@ -562,7 +562,7 @@
         colorSelect="#206095"
         colorHighlight="#999"
         area={false}
-        title="Mid-year population by district, 2001 to 2020"
+        title="Mid-year population by county, 2009 to 2020 - North East region"
         labels
         labelKey="name"
       />
