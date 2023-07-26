@@ -41,12 +41,15 @@
 
   // DEMO-SPECIFIC CONFIG
   // Constants
-  const datasets = ['region', 'district'];
+  const dataset_named = [
+    { original: 'region', file: 'state' },
+    { original: 'district', file: 'county' },
+  ];
   const topojson = './data/geo_lad2021.json';
   const topojson_uhc = './data/geo_lad2021_uhc.json';
   const topojson_copy = './data/geo_lad2021 copy.json';
   const topojson_uhc_copy = './data/geo_lad2021_uhc copy.json';
-
+  const topojson_county_uhc = './data/geo_counties.json';
   const mapstyle =
     'https://bothness.github.io/ons-basemaps/data/style-omt.json';
   const mapbounds = {
@@ -197,18 +200,11 @@
   $: id && runActions(Object.keys(actions)); // Run above code when 'id' object changes
 
   // INITIALISATION CODE
-
-  const dataset_named = [
-    { original: 'region', file: 'state' },
-    { original: 'district', file: 'county' },
-  ];
   dataset_named.forEach((dataset) => {
     const geo = dataset.original;
     const uhc_geo = dataset.file;
 
     getData(`./data/data_${uhc_geo}.csv`).then((arr) => {
-      console.log(`RECIEVED  DATA FOR ${uhc_geo} (aka ${geo}) `);
-      console.log(arr);
       let meta = arr.map((d) => ({
         code: d.code,
         name: d.name,
@@ -216,20 +212,13 @@
       }));
       let lookup = {};
 
-      console.log(meta);
-
       meta.forEach((d) => {
         lookup[d.code] = d;
       });
 
-      console.log(`marker 1   FOR ${uhc_geo} (aka ${geo})`);
-      console.log(metadata);
-
       // bug here
       metadata[geo].array = meta;
       metadata[geo].lookup = lookup;
-
-      console.log(`marker 2   FOR ${uhc_geo} (aka ${geo})`);
 
       let indicators = arr.map((d, i) => ({
         ...meta[i],
@@ -275,7 +264,10 @@
   });
 
   console.log('*************BEFORE getTopo()');
-  getTopo(topojson_uhc, 'geog').then((geo) => {
+
+  // topojson_county_uhc
+  // topojson_copy
+  getTopo(topojson_county_uhc, 'geog').then((geo) => {
     console.log(`** THEN`);
     console.log(geo);
 
