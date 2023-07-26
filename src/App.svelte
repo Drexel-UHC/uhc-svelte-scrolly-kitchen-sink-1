@@ -721,8 +721,9 @@
   <h2>How to use this template</h2>
   <p>
     You can find the source code and documentation on how to use this template
-    in <a href="https://github.com/ONSvisual/svelte-scrolly/" target="_blank"
-      >this Github repo</a
+    in <a
+      href="https://github.com/Drexel-UHC/uhc-svelte-scrolly-template/"
+      target="_blank">this Github repo</a
     >.
   </p>
 </Section>
